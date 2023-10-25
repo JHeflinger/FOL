@@ -1,0 +1,24 @@
+Scene: The Game of Life
+Primary Camera: -1
+Primary Audio Listener: -1
+Physics:
+  Gravity: 9.80000019
+  VelocityIterations: 6
+  PositionIterations: 2
+Entities:
+  - Entity: 0
+    TagComponent:
+      Tag: Game Controller
+    TransformComponent:
+      Translation: [0, 0, 0]
+      Rotation: [0, 0, 0]
+      Scale: [1, 1, 1]
+    ScriptComponent:
+      ClassName: Game.Controller
+      ScriptFields:
+        - Name: Frequency
+          Type: Float
+          Data: 0.0900000036
+        - Name: Size
+          Type: Int
+          Data: 50
